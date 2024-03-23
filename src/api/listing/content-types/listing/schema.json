@@ -18,11 +18,6 @@
     "address": {
       "type": "string"
     },
-    "user": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "plugin::users-permissions.user"
-    },
     "contact": {
       "type": "string"
     },
@@ -54,6 +49,21 @@
       "type": "string"
     },
     "publicLiability": {
+      "type": "string"
+    },
+    "user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "listing"
+    },
+    "driverLicenseFront": {
+      "type": "string"
+    },
+    "driverLicenseBackUrl": {
+      "type": "string"
+    },
+    "permitUrl": {
       "type": "string"
     }
   }

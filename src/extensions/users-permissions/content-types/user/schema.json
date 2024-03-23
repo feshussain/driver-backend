@@ -68,7 +68,8 @@
     "listing": {
       "type": "relation",
       "relation": "oneToOne",
-      "target": "api::listing.listing"
+      "target": "api::listing.listing",
+      "mappedBy": "user"
     }
   }
 }

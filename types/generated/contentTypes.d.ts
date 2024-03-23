@@ -376,11 +376,6 @@ export interface ApiListingListing extends Schema.CollectionType {
   attributes: {
     name: Attribute.String;
     address: Attribute.String;
-    user: Attribute.Relation<
-      'api::listing.listing',
-      'oneToOne',
-      'plugin::users-permissions.user'
-    >;
     contact: Attribute.String;
     businessEmail: Attribute.Email;
     businessPhone: Attribute.String;
@@ -392,6 +387,14 @@ export interface ApiListingListing extends Schema.CollectionType {
     license: Attribute.String;
     goodsInTransit: Attribute.String;
     publicLiability: Attribute.String;
+    user: Attribute.Relation<
+      'api::listing.listing',
+      'oneToOne',
+      'plugin::users-permissions.user'
+    >;
+    driverLicenseFront: Attribute.String;
+    driverLicenseBackUrl: Attribute.String;
+    permitUrl: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
