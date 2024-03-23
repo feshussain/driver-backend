@@ -13,7 +13,7 @@ services:
       sizeGB: 1
     envVars:
       - key: NODE_VERSION
-        value: ~18.2.0
+        value: ~19.0.0 # Update this line to match the expected Node.js version range
       - key: NODE_ENV
         value: production
       - key: DATABASE_FILENAME
