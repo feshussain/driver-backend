@@ -14,7 +14,7 @@ services:
     envVars:
       - key: NODE_VERSION
         value: ~19.0.0 # Update this line to match the expected Node.js version range
-      - key: NODE_ENV
+      - key: ~19.0.0
         value: production
       - key: DATABASE_FILENAME
         value: /data/strapi.db
