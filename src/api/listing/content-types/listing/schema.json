@@ -56,6 +56,22 @@
     },
     "publicLiability": {
       "type": "string"
+    },
+    "postalcode": {
+      "type": "string"
+    },
+    "isApproved": {
+      "type": "boolean",
+      "default": false
+    },
+    "vicinity": {
+      "type": "string"
+    },
+    "locality": {
+      "type": "string"
+    },
+    "city": {
+      "type": "string"
     }
   }
 }

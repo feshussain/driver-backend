@@ -392,6 +392,11 @@ export interface ApiListingListing extends Schema.CollectionType {
       'plugin::users-permissions.user'
     >;
     publicLiability: Attribute.String;
+    postalcode: Attribute.String;
+    isApproved: Attribute.Boolean & Attribute.DefaultTo<false>;
+    vicinity: Attribute.String;
+    locality: Attribute.String;
+    city: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
